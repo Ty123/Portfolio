@@ -1,0 +1,19 @@
+﻿
+/* reset.css*/
+@import '_meyer-reset.scss';
+/* naviagion file */
+@import '_navigation.scss';
+
+/*===================*/
+@import "bootstrap.min";
+
+.extend-test {
+    @extend .test;
+    color: #ffd800;
+}
+
+.extend-bootstrap-btn {
+    @extend .btn;
+    background: #ffd800;
+}
+

@@ -1,0 +1,14 @@
+﻿@mixin creat-a-tag {
+    a {
+        color: #ffd800;
+        text-decoration: none;
+    }
+}
+
+@include creat-a-tag;
+
+.test {
+    color: #ff0000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

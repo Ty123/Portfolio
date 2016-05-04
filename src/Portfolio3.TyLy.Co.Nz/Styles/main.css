@@ -1,0 +1,111 @@
+﻿.nav {
+  width: 90px;
+}
+
+.nav .nav-list {
+  margin: 0;
+  padding: 10vh 0;
+  list-style-type: none;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  height: 100vh;
+  overflow: visible;
+}
+
+.nav .nav-list .nav-item {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  position: relative;
+  overflow: visible;
+  border-bottom: 7px solid rgba(0, 0, 0, 0.8);
+  background: #ffd800;
+  -moz-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav .nav-list .nav-item.active {
+  background: #20232a;
+}
+
+.nav .nav-list .nav-item:last-child {
+  border-bottom: none;
+}
+
+.nav .nav-list .nav-item:hover {
+  -ms-flex: 2;
+  -webkit-flex: 2;
+  flex: 2;
+}
+
+.nav .nav-list .nav-item:hover .nav-link {
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav .nav-list .nav-item:hover .blue-line,
+.nav .nav-list .nav-item:hover .white-line,
+.nav .nav-list .nav-item:hover .white-circle {
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+.nav .nav-list .nav-link {
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 0 20%;
+  position: absolute;
+  width: 280%;
+  height: 100%;
+  left: calc(-280% + 90px);
+  background: rgba(32, 35, 42, 0.75);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+  -moz-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav .nav-list .nav-link.flex-row {
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.nav .nav-list .nav-link.centered {
+  align-items: center;
+}
+
+.nav .nav-list .nav-link .section-half {
+  justify-content: center;
+  height: auto;
+}
+
+.nav .nav-list .nav-link .section-half:nth-child(2) {
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
